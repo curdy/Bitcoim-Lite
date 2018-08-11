@@ -8,18 +8,12 @@ use Illuminate\Support\Facades\Input;
     if($lite_amount == 0){
         
         ?>
-            <style type="text/css">#buy{display:block;}#bit{display:none;}
-            </style>
-
+            
         <?php
         }
       else{
         ?>
-        <style type="text/css">
-            #buy{display:none;}#bit{
-            display:block;}
-    
-        </style>
+        <
         <?php
     
     }
@@ -223,22 +217,20 @@ $languages_list = display_language_box($def_language);
                             <div class="transfer-wraper">
                                 <div class="form-group no-mb">
                                     <label class="form-label">Select the cryptocurrency</label>
-                                    <span class="desc">minimum value "0.001 BTC"</span>
+                                    <span class="desc">minimum value "0.0016 BTC"</span>
 
                                     <div class="input-group mb-10">
                                         <span class="input-group-addon"></span>
                                         
                                         <div class="input-group-btn"  style="width:100%">
                                             <button type="button" class="btn btn-red dropdown-toggle" style="width:100%;text-align:left" data-toggle="dropdown" aria-expanded="true">
-                                                <i class="cc BTC mr-5"></i>Bitcoin <span class="caret" style="position: absolute;right: 10px;top: 14px;"></span>
+                                                <i class="cc BTC mr-5"></i>Bitcoin Lite <span class="caret" style="position: absolute;right: 10px;top: 14px;"></span>
                                             </button>
                                         </div>
 
                                     </div>
 
-                                    <label class="form-label">Choose payment method</label>
-                                    <span class="desc">minimum value "0.001 BTC"</span>
-                                    <form method="POST" action="{{url('test')}}">
+                                    <form method="POST" action="{{url('payment')}}">
                                         {{ csrf_field() }}
                                     <label class="form-label">Exchange operation</label>
                                     <span class="desc">you can cancel this exchange easily</span>

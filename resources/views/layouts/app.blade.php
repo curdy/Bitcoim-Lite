@@ -56,14 +56,9 @@
         <!-- START CONTAINER -->
             <div class="page-container row-fluid container-fluid">
 
-                @guest
-
-                @else
                     <!-- SIDEBAR - START -->
                         @include('Partials.sidebar')
                     <!--  SIDEBAR - END -->
-
-                @endguest
 
                 <!-- START CONTENT -->
                     @yield('content')

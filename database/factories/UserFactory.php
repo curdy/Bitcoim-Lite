@@ -25,9 +25,9 @@ $factory->define(App\User::class, function (Faker $faker) {
 $factory->define(App\BitcoinLite::class, function (Faker $faker) {
     return [
         'name' => $faker->word,
-        'rate_btc' => $faker->randomFloat(2, 0.00000000, 0.99999999),
-        'buy_rate_btc' => $faker->randomFloat(2,0.01,100),
-        'sell_rate_btc' => $faker->randomFloat(2,0.01,100),
+        'rate_btc' => $faker->randomFloat(8,0.00000001,0.99999999),
+        'buy_rate_btc'  => $faker->randomFloat(2,0.01,100),
+        'sell_rate_btc'  => $faker->randomFloat(2,0.01,100),
     ];
 });
 

@@ -101,7 +101,7 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
    "http://www.w3.org/TR/html4/loose.dtd">
 <html><head>
-<title><?php echo $coinName; ?> Pay-Per-Product Cryptocoin Payment Example</title>
+<title><?php echo $coinName; ?> Bitcoin Payment</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta http-equiv='cache-control' content='no-cache'>
 <meta http-equiv='Expires' content='-1'>

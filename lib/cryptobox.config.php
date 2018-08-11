@@ -7,13 +7,10 @@
  *
  */
 
- define("DB_HOST", 	"localhost");				// hostname
+ define("DB_HOST", 	"aa1jp7pw4dnjr8j.ctsgce3shpnj.us-east-1.rds.amazonaws.com");				// hostname
  define("DB_USER", 	"root");		// database username
- define("DB_PASSWORD", 	"");		// database password
- define("DB_NAME", 	"lite");	// database name
-
-
-
+ define("DB_PASSWORD", 	"19950590Curdy");		// database password
+ define("DB_NAME", 	"ebdb");	// database name
 
 /**
  *  ARRAY OF ALL YOUR CRYPTOBOX PRIVATE KEYS

@@ -13,8 +13,9 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        $this->call(UserTableSeeder::class);
-        factory(App\BitcoinLite::class,1)->create();
-        factory(App\Order::class,20)->create();
+        //$this->call(UserTableSeeder::class);
+        $this->call(LitePriceSeeder::class);
+        //factory(App\BitcoinLite::class,1)->create();
+        //factory(App\Order::class,20)->create();
     }
 }

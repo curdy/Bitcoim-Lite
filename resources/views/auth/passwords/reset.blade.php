@@ -1,7 +1,9 @@
-@extends('layouts.app')
+@extends('layouts.inapp')
 
 @section('content')
-<div class="container">
+<!-- START CONTENT -->
+<section id="main-content" class=" ">
+            <div class="wrapper main-wrapper row" style=''>
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
@@ -61,5 +63,7 @@
             </div>
         </div>
     </div>
-</div>
+    <div class="clearfix"></div>
+    </div>
+    </section>
 @endsection

@@ -17,9 +17,22 @@ Route::get('/', function () {
     return view('home');
 });
 
-Route::get('about', 'PagesController@about');
-Route::get('contact', 'PagesController@contact');
-Route::get('mining', 'PagesController@mining');
+Route::get('bit', function () {
+    return view('bitcoin');
+});
+
+Route::get('about', 'PagesController@about')->name('mining');
+Route::get('contact', 'PagesController@contact')->name('contact');
+Route::get('mining', 'PagesController@mining')->name('mining');
+Route::get('faq', 'PagesController@faq')->name('faq');
+
+Route::get('withdraw', 'PagesController@withdraw')->name('withdraw');
+Route::get('affiliate', 'PagesController@affiliate')->name('affiliate');
+Route::get('wallet', 'PagesController@wallet')->name('wallet');
+Route::get('settings', 'PagesController@settings')->name('settings');
+Route::get('help', 'PagesController@help')->name('help');
+
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
@@ -34,9 +47,7 @@ Route::get('userManagement', function () {
     return view('userPanel.usermanagement');
 });
 
-Route::get('buy-sell', function () {
-    return view('userPanel.buy-sell');
-});
+Route::get('/buy-sell', 'PagesController@buysell')->name('buy-sell');
 
 Route::get('liteprice', function () {
     return view('userPanel.litepricing');
@@ -57,15 +68,7 @@ Route::get('order', function () {
 
 });
 
-Route::post('test', function()
-{
-    
-    $litecount = Input::get("liteamount");
-
-    $liteamount = 92 * $litecount;
-    return view('userPanel.test', compact('liteamount'));
-    
-});
+Route::post('/payment', 'PagesController@payment')->name('payment');
 
 Route::get('faq', function () {
     return view('pages.FAQ');
